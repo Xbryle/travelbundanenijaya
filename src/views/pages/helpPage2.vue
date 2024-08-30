@@ -11,12 +11,16 @@
 
         <div class="service-card-wrapper" style="">
             <div class="service-sheet" style="">
-                <!-- <i class="fa-solid fa-car" style="font-size: 3rem; color: #FFFFFF;"></i> -->
-                <h2>Jasa Pengantaran</h2>
-                <i class="fa-solid fa-car"></i>
-                <h4>Kami menyediakan layanan perjalanan yang mencakup destinasi di berbagai kota di Kalimantan</h4>
+                <div class="rounded-sheet">
+                    <i class="fa-solid fa-car"></i>
+                    <!-- <i class="fa-solid fa-car" style="font-size: 3rem; color: #FFFFFF;"></i> -->
+                </div>
+                <div class="right-section-wrap">
+                    <h2>Jasa Pengantaran</h2>
+                    <h4>Kami menyediakan layanan perjalanan yang mencakup destinasi di berbagai kota di Kalimantan</h4>
+                </div>
             </div>
-            <div class="service-sheet" style="">
+            <!-- <div class="service-sheet" style="">
                 <h2>Kirim Barang</h2>
                 <i class="fa-solid fa-truck-fast"></i>
                 <h4>Kirim barang ke seluruh Kalimantan dengan mudah dan aman bersama BNJ Travel</h4>
@@ -40,7 +44,7 @@
                 <h2>Carter Mobil</h2>
                 <i class="fa-solid fa-car-rear"></i>
                 <h4>Kami menyediakan jasa carter mobil untuk digunakan dalam waktu sehari maupun beberapa hari</h4>
-            </div>
+            </div> -->
         </div>
         <svg class="shape-1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
             <path fill="#FFFFFF" d="M36.8,-61.6C47.1,-57.8,54.4,-46.7,63.9,-35.3C73.3,-23.8,84.8,-11.9,82.3,-1.4C79.9,9,63.4,18,54.3,30.2C45.2,42.3,43.6,57.5,35.8,56.6C28,55.7,14,38.6,3,33.4C-7.9,28.1,-15.9,34.6,-23.6,35.5C-31.3,36.4,-38.8,31.6,-50.7,24.7C-62.6,17.8,-79,8.9,-82,-1.8C-85.1,-12.4,-74.8,-24.8,-61,-28.5C-47.2,-32.2,-30,-27.1,-19.2,-30.6C-8.5,-34.2,-4.2,-46.5,4.5,-54.3C13.2,-62.1,26.5,-65.5,36.8,-61.6Z" transform="translate(100 100)" />
@@ -141,7 +145,7 @@
 .help-page p {
     text-align: center;
     font-size: .95rem;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 70px;
     color: #ffffffbe;
     max-width: 50vw;
@@ -163,33 +167,38 @@
     gap: 5px;
     font-size: .7rem;
     margin-top: 20px;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 1px;
 }
 
 .help-page a span {
     border-bottom: 1px solid #FFFFFF;
 }
+
 .service-card-wrapper {
     display: flex; 
-    overflow-x: auto;
-    overflow-y: hidden;
+    flex-wrap: wrap;
+    /* overflow-x: auto;
+    overflow-y: hidden; */
     gap: 30px;
     z-index: 2;
-    width: 65vw;
-    padding: 20px 20px;
+    width: 90vw;
+    /* padding: 20px 20px; */
+    justify-content: center;
+    /* background-color: #00000018; */
 }
 
 
 .service-sheet {
     /* box-shadow: -3px 3px 10px 1px #ffffff27; */
-    display: grid;
-    justify-items: center;
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 15px 25px;
     border-radius: 10px;
     cursor: pointer;
-    width: 300px;
+    width: 400px;
     min-width: 300px;
     box-sizing: border-box;
     /* height: 300px; */
@@ -198,29 +207,39 @@
     /* box-shadow: 0 0px 20px 3px #ffffffa2; */
     border: 1px solid #ffffffa2;
 }
-
+.right-section-wrap {
+    display: grid;
+    gap: 20px;
+}
 .service-sheet h2 {
-    font-size: 1.9rem;
+    font-size: 1.2rem;
     font-weight: 500;
-    margin-bottom: 40px;
-    text-align: center;
+    /* text-align: center; */
     color: #ffffff;
     font-family: Oswald;
     text-transform: uppercase;
     line-height: 1;
     cursor: pointer;
 }
+.rounded-sheet {
+    width: 60px;
+    aspect-ratio: 1/1;
+    display: grid;
+    align-items: center;
+    justify-content: center;   
+    background-image: linear-gradient(to bottom right, #ff49b0, #ec8d35);
+    border-radius: 50%;
+}
 .service-sheet i {
-    font-size: 90px;
-    margin-bottom: 20px
+    font-size: 30px;
 }
 .service-sheet h4 {
-    line-height: 1.6;
+    line-height: 1.2;
     cursor: text;
-    font-weight: 300;
+    font-weight: 400;
     font-size: .9rem;
     color: #ffffffd0;
-    text-align: center;
+    /* text-align: center; */
     /* text-align: center; */
     cursor: pointer;
 }

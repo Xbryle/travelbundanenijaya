@@ -34,14 +34,31 @@
 export default {
     components: {
     },
+    methods: {
+        reveal() {
+            var reveals = document.querySelectorAll(".words-about");
+            for (var i = 0; i < reveals.length; i++) {
+                // var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                // var elementVisible = 100;
+                if (elementTop < 650) {
+                reveals[i].classList.add("active");
+                } else {
+                reveals[i].classList.remove("active");
+                }
+            }
+        },
+    },
+    mounted() {
+        window.addEventListener("scroll", this.reveal);
+    }
 }
 
 </script>
 
 <style scoped>
-
 .about-page {
-    padding: 70px 5%;
+    padding: 120px 5%;
     width: 100vw; 
     justify-content: center;
     gap: 40px;
@@ -126,6 +143,15 @@ export default {
     width: 40vw;
     align-content: end;
     gap: 30px;
+}
+.words-about {
+    transition: all 1s cubic-bezier(.02,-0.02,0,1);
+    transform: translateY(150px);
+    opacity: .5;
+}
+.words-about.active {
+    transform: translateY(0);
+    opacity: 1;
 }
 .words-about h4 {
     font-size: 1rem;

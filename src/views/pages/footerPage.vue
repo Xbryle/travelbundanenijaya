@@ -1,6 +1,11 @@
 <template>
     <div class="footer-page">
-        
+        <div class="custom-shape-divider-top-1716986690">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+
         <div class="left-section">
             <p>we are ready to do this</p>
             <h1>Let's get in<br>Touch</h1>
@@ -50,7 +55,7 @@
                     </div>
                 </div>
             </div>
-            <p style="text-align: center;">copyright &copy;2024 <span>BNJ Travel.</span> designed by <span>MC Project</span></p>
+            <p style="">copyright &copy;2024 <span>BNJ Travel.</span> designed by <span>MC Project</span></p>
         </div>
     </div>
 </template>
@@ -64,11 +69,35 @@
 
 <style scoped>
 
-.footer-page {
+.custom-shape-divider-top-1716986690 {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    background-color: #000000;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1716986690 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 99px;
+}
+
+.custom-shape-divider-top-1716986690 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.footer-page {
+    position: relative;
+    width: 100%;
+    /* background-color: #000000; */
+    background-image: linear-gradient(to bottom right, #ff49b0, #ec8d35);
     color: #FFFFFF;
-    padding: 50px 7%;
+    padding: 70px 7%;
+    padding-top: 150px;
     display: flex;
     flex-wrap: wrap;
     row-gap: 100px;
@@ -80,6 +109,7 @@
     display: grid;
     gap: 70px;
     width: fit-content;
+    justify-content: start;
 }
 
 .footer-page .right-section .contact {
@@ -104,7 +134,7 @@
     justify-content: start;
 }
 .footer-page .right-section .contact-wrapper div a{
-    color: #b7b7b7;
+    color: #ffffff;
     text-decoration: none;
     font-weight: 400;
     font-size: .9rem;
@@ -129,16 +159,17 @@
     font-size: .9rem;
     margin-bottom: 0;
     font-weight: 400;
-    color: #b7b7b7;
+    color: #ffffff;
 }
 
 .footer-page .right-section p {
     font-size: .9rem;
-    color: #b7b7b7;
+    color: #ffffff;
     font-weight: 400;
 }
 .footer-page .right-section p span {
     color: #ffffff;
+    font-weight: bold;
 }
 
 
@@ -272,7 +303,7 @@
 
 .button-57:hover {
     box-shadow: 0 0 20px 2px #ffffff85;
-    border: 1px solid #000000;
+    /* border: 1px solid #000000; */
 }
 
 .button-57:hover:after {

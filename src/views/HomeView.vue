@@ -32,7 +32,7 @@
   import Map from './pages/mapPage.vue';
   // import Join from './pages/joinPage.vue';
   import FooterPage from './pages/footerPage.vue';
-  import HelpPage from './pages/helpPage.vue';
+  import HelpPage from './pages/helpPage3.vue';
 
   export default {
     name: 'HomeView',

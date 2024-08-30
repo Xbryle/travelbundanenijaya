@@ -25,10 +25,11 @@
     display: grid;
     align-items: center;
     justify-items: center;
-    background-image: url(../../assets/images/bg6.jpg);
+    /* background-image: url(../../assets/images/bg6.jpg);
     background-size: cover;
     background-position: top center;
-    background-attachment: fixed;
+    background-attachment: fixed; */
+    background-color: #FFFFFF;
 }
 
 .maps {

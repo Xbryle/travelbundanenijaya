@@ -20,7 +20,7 @@
 
         <div class="content">
             <!-- <h1>Anda sedang ingin<br><span>Pergi Keluar Kota?</span> -->
-            <h1>Anda sedang ingin<br><span>Pergi Keluar Kota?</span>
+            <h1>CV. Bunda Neni Jaya<br><span>Mau Pergi Keluar Kota?</span>
             </h1>
             <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, magnam molestiae libero excepturi delectus veritatis error doloribus tempore vitae saepe, quis, ad dicta eaque. Esse!</p> -->
             <p>Kami menyediakan layanan perjalanan yang mencakup destinasi di  berbagai kota di Kalimantan. Kami berkomitmen untuk memberikan pengalaman perjalanan yang menyenangkan dan nyaman bagi pelanggan kami.</p>
@@ -28,6 +28,8 @@
                 Hubungi Kami <i class="fa-solid fa-arrow-right"></i>
             </a>
         </div>
+
+        <!-- <img class="photo" src="../../assets/IMG_SEGMENT_20240830_210420.png"> -->
 
         <div class="custom-shape-divider-bottom-1716290929">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -70,6 +72,13 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@100;200;300;500;600;700&display=swap');
 
 /* ===============================================Home===================================================== */
+.photo {
+    position: absolute;
+    bottom: 0;
+    right: -50px;
+    height: 90vh;
+    z-index: 1;
+}
 .random-shape {
     position: absolute;
     left: -250px;
@@ -97,12 +106,13 @@ export default {
 
 .custom-shape-divider-bottom-1716290929 {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
+    z-index: 2;
 }
 
 .custom-shape-divider-bottom-1716290929 svg {
@@ -174,6 +184,7 @@ export default {
     background-clip: text;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #ffffff;
+    font-size: calc(3vw + 1rem);
 }
 #home .content p{
     width: 32vw;
@@ -280,6 +291,9 @@ export default {
 @media screen and (max-width: 611px) {
     #home .content p{
         font-size: .9rem
+    }
+    .photo {
+        height: 65vh;
     }
 }
 @media screen and (max-width: 321px) {

@@ -92,7 +92,7 @@
 
 .custom-shape-divider-bottom-1716986251 {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -177,6 +177,7 @@
     background-color: #0000002f;
     background-blend-mode: overlay;
     overflow: hidden;
+
 }
 .help-page h1{
     font-size: calc(1vw + 1.7rem);

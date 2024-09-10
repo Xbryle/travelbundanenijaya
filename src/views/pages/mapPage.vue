@@ -21,7 +21,7 @@
 
 .map-page {
     width: 100%;
-    padding: 2vw 0;
+    padding: 70px 0;
     display: grid;
     align-items: center;
     justify-items: center;

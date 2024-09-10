@@ -5,6 +5,7 @@
     <HomePageProto2 />
     <AboutPageProto />
     <HelpPage />
+    <HighlightsPage />
     <!-- <AboutPage /> -->
     <!-- <div class="new" id="new">
       <div class="triangle">
@@ -33,6 +34,7 @@
   // import Join from './pages/joinPage.vue';
   import FooterPage from './pages/footerPage.vue';
   import HelpPage from './pages/helpPage3.vue';
+  import HighlightsPage from './pages/highlightsPage.vue';
 
   export default {
     name: 'HomeView',
@@ -49,6 +51,7 @@
       FooterPage,
       // HomePageProto,
       HelpPage,
+      HighlightsPage,
     },
   }
 </script>
@@ -60,7 +63,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-image: linear-gradient(to right, #10131D,#151927,#1F2334,#10131D);
+  /* background-image: linear-gradient(to right, #10131D,#151927,#1F2334,#10131D); */
   background-repeat: no-repeat;
   background-attachment: fixed;
 }

@@ -2,10 +2,10 @@
     <div class="about-page">
         <div class="images-about">
             <div class="left-section">
-                <img src="../../assets/barinmap.jpg" alt="" style="max-width: 40vw;">
+                <img src="../../assets/photo.jpg" alt="" style="max-width: 40vw;">
                 <div>
                     <h2>01</h2>
-                    <p>Happy Clients</p>
+                    <p>Sampai Ke Tujuan Dengan Aman</p>
                 </div>
             </div>
             <div class="right-section">
@@ -16,11 +16,11 @@
         <div class="words-about">
             <h4>Tentang Kami</h4>
             <h1>Pesan Tiket dan Traveling,<br>Nikmati <span>Petualangan Anda!</span></h1>
-            <p><span>BNJ</span> didirikan pada tahun 2020 dan telah berkembang pesat menjadi travel terpercaya dengan reputasi gemilang. Kami berkomitmen untuk membantu Anda dalam berbagai kebutuhan perjalanan, baik untuk berpergian, mengantar barang, ataupun memesan tiket pesawat dan kapal.</p>
+            <p><span>CV. BNJ</span> didirikan pada tahun 2020 dan telah berkembang pesat menjadi travel terpercaya dengan reputasi gemilang. Kami berkomitmen untuk membantu Anda dalam berbagai kebutuhan perjalanan, baik untuk berpergian, mengantar barang, ataupun memesan tiket pesawat dan kapal.</p>
             <ul>
-                <li>Ui yang indah dan mudah dipahami, animasi profesional</li>
-                <li>Keunggulan ini adalah design piksel yang sempurna & kode yang jelas dikirimkan</li>
-                <li>Hardikan layanan anda dengan felskibel, nyaman dan serbaguna</li>
+                <li>Layanan Travel untuk Pengangkutan Penumpang dan Barang ke Berbagai Kota di Kalimantan</li>
+                <li>Carter dan Rental Mobil</li>
+                <li>Pemesana Tiket Pesawat Dan Kapal</li>
             </ul>
             <a href="https://api.whatsapp.com/send/?phone=6285161319636&text=Halo+Min%21+saya+minta+Info+Tiket+Kapal%3F&type=phone_number&app_absent=0" target="_blank">
                 <v-btn class="contact-about">Hubungi Kami <i class="fa-brands fa-whatsapp ms-2" style="color: lightgreen; font-size: 1.4rem;"></i></v-btn>
@@ -182,7 +182,7 @@ export default {
     border-radius: 10px solid #ffffff; 
     color: #ffffff; 
     box-shadow: transparent;
-    width: fit-content; 
+    width: 100%; 
     text-transform: none; 
     padding: 20px; 
     border-radius: 30px; 

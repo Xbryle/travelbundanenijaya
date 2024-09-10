@@ -55,7 +55,7 @@
                     </div>
                 </div>
             </div>
-            <p style="">copyright &copy;2024 <span>BNJ Travel.</span> designed by <span>MC Project</span></p>
+            <p style="">copyright &copy;2024 <span>CV. BNJ Travel</span></p>
         </div>
     </div>
 </template>
